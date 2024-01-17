@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bible App</title>
+</head>
+<body>
+    <h1>{{ data.data.name }}</h1>
+    <h2>{{ to_read[0] }} {{ to_read[1] }} </h2>
+    {% for key, value in texts.items() %}
+        <h3>{{ key }}</h3>
+        <div>{{ value | safe }}</div>
+    {% endfor %}
+</body>
+</html>
